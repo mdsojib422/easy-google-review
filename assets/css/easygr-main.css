@@ -1,0 +1,446 @@
+.easygr-options-panel-header {
+  width: 100%;
+  height: 200px;
+  background: url("../img/option-panel-header-bg.jpg");
+  background-size: cover;
+}
+header.easygr-options-panel-header h1 {
+  font-size: 4rem;
+  text-align: center;
+  line-height: 10rem;
+  color: white;
+}
+
+.easygr-tab-content {
+  display: none;
+}
+
+.container {
+  max-width: 90%;
+  margin: 50px auto;
+}
+
+.sidepanel {
+  display: inline-block;
+  width: 25%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.sidepanel i {
+  margin-right: 15px;
+}
+
+.sidebar__header {
+  vertical-align: top;
+  background: #FAFBFB;
+  padding: 20px;
+  border-bottom: 1px solid #F0F1F2;
+}
+
+.sidebar__header img.sidebar__avatar {
+  float: left;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.sidebar__header p {
+  line-height: 2em;
+  margin: 0;
+}
+
+.easygr-tab-item {
+  background: #FFF;
+  padding: 20px;
+  color: #999;
+  border-bottom: 1px solid #F0F1F2;
+  transition: all 0.3s ease;
+}
+
+.easygr-active-tab {
+  color: #000;
+  border-left: 3px solid #348AA7;
+}
+
+.easygr-tab-item:hover {
+  background: #f7f7f7;
+  cursor: pointer;
+}
+
+.sidebar__label {
+  float: right;
+  font-size: 80%;
+  line-height: 1.6em;
+  color: #FDE756;
+}
+
+.sidebar__badge {
+  text-align: center;
+  float: right;
+  font-size: 70%;
+  line-height: 1.8em;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #FFF;
+  background: #8ED081;
+}
+
+.main {
+  width: 70%;
+  vertical-align: top;
+  display: inline-block;
+  background: #FFF;
+  margin-left: 3%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.main__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #F0F1F2;
+}
+
+.main__content {
+  padding: 20px;
+}
+
+.main__avatar {
+  background: url("https://unsplash.it/150/?image=209");
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  display: block;
+  vertical-align: middle;
+  margin: 20px auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.main__avatar:hover .main__avatar--overlay {
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.main__avatar--overlay {
+  opacity: 0;
+  background: rgba(52, 138, 167, 0.6);
+  color: #FFF;
+  text-align: center;
+  line-height: 150px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.main__settings-form {
+  max-width: 50%;
+  display: block;
+}
+
+.main__input-label {
+  font-size: 80%;
+  color: #C4C1C9;
+  display: block;
+  margin: 5px 5px 5px 5px;
+}
+
+.main__input {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #F1F3F5;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 15px;
+  border-radius: 3px;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main__input:focus {
+  border: 1px solid #348AA7;
+  transition: all 0.3s ease;
+}
+
+.btn {
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  outline: none;
+  padding: 15px 25px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.main__save-button {
+  color: #FFF;
+  background-color: #8ED081;
+}
+
+.main__save-button:hover {
+  background-color: #6dc25c;
+  cursor: pointer;
+}
+
+.main__cancel-button {
+  color: #FFF;
+  background: #CCC;
+}
+
+.main__cancel-button:hover {
+  background-color: #b3b3b3;
+  cursor: pointer;
+}
+
+footer {
+  background: #464C4F;
+  padding: 40px;
+  color: #CCC;
+  font-size: 90%;
+}
+
+/* Button Design */
+
+.easygr-btn{
+  background-color: #8952d6d0;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.easygr-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+}
+
+.easygr-btn:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.easygr-btn:hover {
+  background-color: #3700b3;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.easygr-warning p {
+  font-size: 16px;
+  color: #ef5656;
+  font-weight: 500;
+}
+a#easygr-sync {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0 25px;
+  color: black;
+}
+
+a#easygr-sync:hover{
+  color: #8952d6d0;
+}
+
+/* Table Style */
+.app-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.easygr-table-wrapper {
+  padding: 1rem;
+}
+.app-table th, .app-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.app-table th {
+  background-color: #f2f2f2;
+}
+
+.preview {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+/* End Table Style */
+
+
+/* Card Design  */
+.easygr-card {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 50px;
+  position: relative;
+}
+.easygr-user-details,.easygr-subscription-details{
+  width: 50%;
+}
+.user-details {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.easygr-userid-label {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 18px;
+}
+.easygr-userid-label h4{
+  font-weight: 600;
+}
+
+.easygr-subscription-details,.easygr-user-details {
+  background: linear-gradient(to right, #a4c4e2, #fbf7f3, #9f72de);
+  padding: 27px;
+  border-radius: 10px;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.info h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.info p {
+  color: #777;
+  font-size: 16px;
+  margin: 5px 0 0;
+}
+
+.edit-btn {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.edit-btn:hover {
+  text-decoration: underline;
+}
+
+
+.subscription-details h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.plan-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.status.active {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.status.expired {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.subscription-details p {
+  font-size: 14px;
+  color: #555;
+}
+
+.manage-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.manage-btn:hover {
+  background-color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .user-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .avatar {
+    margin-bottom: 10px;
+  }
+
+  .edit-btn {
+    align-self: flex-end;
+  }
+}
+
+
+/* End Card Design  */
+
+@media (max-width: 764px) {
+  .sidepanel {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .easygr-tab-item {
+    padding: 15px;
+  }
+
+  .main {
+    width: 100%;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
