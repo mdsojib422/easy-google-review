@@ -2,7 +2,6 @@
 if ( !defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
 }
-print_r($easygr_applications->application);
 ?>
 <div id="applications" class="easygr-tab-content">
     <div class='main__header'>
@@ -29,9 +28,11 @@ print_r($easygr_applications->application);
                 <tr>
                     <td><?php echo esc_html($i); ?></td>
                     <td><h3><?php echo $app->widget_name; ?></h3></td>
-                    <td>[easygr id='']</td>
+                    <td><span class='shortcode copiable_wrap'>
+                    <input type='text' onfocus='this.select();' readonly='readonly' value='[easygr id="<?php echo esc_html($app->id); ?>"]' class='copiable_input' >
+                    <span class='tooltip'>Click To Copy</span></td>
                     <td>
-                        <a href="#" class="preview">
+                        <a href="https://phplaravel-1196969-4821714.cloudwaysapps.com/review/show/<?php echo esc_html($app->id); ?>" class="preview" target="_blank">
                             <img height="40" src="<?php echo EASYGR_URL . '/assets/img/preview.png'; ?>" alt="">
                         </a>
                     </td>

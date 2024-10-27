@@ -93,9 +93,8 @@ if ( !class_exists( "EasyGR" ) ) {
             require_once EASYGR_PATH . "/includes/helper-functions.php";
             require_once EASYGR_CLASS_PATH . "handlerequest.php";
             //Class File
-            require_once EASYGR_CLASS_PATH . "assets.php";
             require_once EASYGR_CLASS_PATH . "admin.php";
-            // require_once EASYGR_PATH . "/includes/elementor/elementor.php";
+            require_once EASYGR_CLASS_PATH . "shortcodes.php";
         }
 
         /**
@@ -107,7 +106,7 @@ if ( !class_exists( "EasyGR" ) ) {
             if ( is_admin() ) {
                 $this->controllers['admin'] = EasyGR\Admin::Instance();
             }
-            $this->controllers['assets'] = new EasyGR\Assets();
+            $this->controllers['shortcode'] = new EasyGR\Shortcode();
         }
 
         /**
